@@ -12,16 +12,15 @@ int eh_palindromo_aux(char * str, int inicio, int fim)
 {
     while (str[inicio] == ' ') {
         inicio++;
-        if (inicio >= fim) return 1; // Se chegou no fim, é palíndromo
     }
 
-    // Pula espaços no fim
     while (str[fim] == ' ') {
         fim--;
-        if (inicio >= fim) return 1; // Se chegou no fim, é palíndromo
     }
 
-    if(str[inicio] != str[fim]) return 0;
+    if (inicio >= fim) return 1;
+
+    if (str[inicio] != str[fim]) return 0;
 
     return eh_palindromo_aux(str, inicio+1, fim-1);
 }

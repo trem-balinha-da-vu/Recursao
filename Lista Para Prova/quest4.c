@@ -17,7 +17,7 @@ int menor_elemento(int * vet, int tam)
 {
     int min = vet[0];
 
-    return menor_elemento_aux(vet, tam, min);
+    return menor_elemento_aux(vet, tam-1, min);
 }
 
 int main()
