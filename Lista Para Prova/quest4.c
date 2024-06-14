@@ -8,8 +8,8 @@
 
 int menor_elemento_aux(int * vet, int tam, int min)
 {
-    if (vet[tam] < min) min = vet[tam];
     if (tam < 0) return min;
+    if (vet[tam] < min) min = vet[tam];
 
     return menor_elemento_aux(vet, tam-1, min);
 }
@@ -22,7 +22,7 @@ int menor_elemento(int * vet, int tam)
 
 int main()
 {
-    int vetor_teste[7] = {0, 5, 7, 90, 6, 1456, 78};
+    int vetor_teste[7] = {0, -5, 7, 90, 6, 1456, 78};
 
     printf("\nmenor elemento do vetor: %d", menor_elemento(vetor_teste, 7));
 

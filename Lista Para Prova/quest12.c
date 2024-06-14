@@ -35,8 +35,8 @@ void imprimirSequencias(char sequencia[], int posicaoAtual, char consoantes[], i
 int main() {
     char consoantes[] = "bcdfghjklmnpqrstvwxyz";
     char vogais[] = "aeiou";
-    int tamanhoConsoantes = sizeof(consoantes) - 1; // Subtrair 1 para ignorar o caractere nulo
-    int tamanhoVogais = sizeof(vogais) - 1; // Subtrair 1 para ignorar o caractere nulo
+    int tamanhoConsoantes = sizeof(consoantes) - 1; 
+    int tamanhoVogais = sizeof(vogais) - 1; 
 
     char sequencia[4];
 
